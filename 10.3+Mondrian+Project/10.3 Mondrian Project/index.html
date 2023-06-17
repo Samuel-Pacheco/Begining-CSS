@@ -20,6 +20,10 @@
     But grid lines are transparent!
     */
     body {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
       padding: 0;
       margin: 0;
     }
@@ -27,22 +31,36 @@
 
     .container{
       display: grid;
+      background-color: black;
       height: 748px;
       width: 748px;
-      gap: 3rem;
+      gap: 9px;
+      grid-template-columns: 414fr 155fr 130fr 22fr;
+      grid-template-rows: 320fr 198fr 153fr 50fr;
     }
+
+
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
   <div class="container">
-    <div class = "white"></div>
-    <div class = "red"></div>
-    <div class = "black"></div>
-    <div class = "blue"></div>
-    <div class = "yellow"></div>
+    <div class="item white"></div>
+    <div class="item white2"></div>
+    <div class="item white3"></div>
+    <div class="item white4"></div>
+    
+    <div class="red"></div>
+    <div class="blue"></div> 
+    
+    <div class="item"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
   </div>
+
+   
+  
 </body>
 
 </html>
