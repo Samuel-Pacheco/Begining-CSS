@@ -37,8 +37,32 @@
       gap: 9px;
       grid-template-columns: 414fr 155fr 130fr 22fr;
       grid-template-rows: 320fr 198fr 153fr 50fr;
+      border: 10px solid black;
     }
 
+    .red{
+      background-color: red;
+    }
+
+    .item{
+      background-color: white;
+    }
+    .white{
+      grid-column: span 3;
+    }
+    .white2{
+      grid-row: span 2;
+    }
+    .white3{
+      grid-area: 2/2/4/4;
+    }
+    .blue{
+      background-color: blue;
+      border-bottom: 10px solid black;
+    }
+    .yellow{
+      background-color: yellow;
+    }
 
   </style>
 </head>
@@ -46,13 +70,14 @@
 <body>
   <!-- Write your HTML here -->
   <div class="container">
+    <div class="red"></div>
     <div class="item white"></div>
     <div class="item white2"></div>
     <div class="item white3"></div>
-    <div class="item white4"></div>
     
-    <div class="red"></div>
-    <div class="blue"></div> 
+    <div class="blue"></div>
+    <div class="item white4"></div>
+     
     
     <div class="item"></div>
     <div class="yellow"></div>
